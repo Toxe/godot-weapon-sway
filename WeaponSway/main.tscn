@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://blp24lcw6ty11"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_mcpj5"]
-[ext_resource type="Script" path="res://weapon.gd" id="2_a1wbf"]
+[ext_resource type="Script" uid="uid://d1yduaokyxyop" path="res://main.gd" id="1_mcpj5"]
+[ext_resource type="Script" uid="uid://ckecphwhnjebr" path="res://weapon.gd" id="2_a1wbf"]
 
 [sub_resource type="Gradient" id="Gradient_jee2n"]
 colors = PackedColorArray(0, 0, 0, 1, 0.501961, 0.501961, 0.501961, 0)
@@ -11,7 +11,7 @@ gradient = SubResource("Gradient_jee2n")
 fill_to = Vector2(0, 1)
 
 [sub_resource type="Curve" id="Curve_aqnx3"]
-min_value = -1.0
+_limits = [-1.0, 1.0, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 8.0, 0, 0, Vector2(0.25, 1), 0.0, 0.0, 0, 0, Vector2(0.5, 0), -8.0, -8.0, 0, 0, Vector2(0.75, -1), 0.0, 0.0, 0, 0, Vector2(1, 0), 8.0, 0.0, 0, 0]
 point_count = 5
 metadata/_snap_enabled = true
@@ -24,7 +24,6 @@ metadata/_snap_enabled = true
 metadata/_snap_count = 4
 
 [node name="Main" type="Node2D"]
-position = Vector2(-1, 0)
 script = ExtResource("1_mcpj5")
 
 [node name="Background" type="Node2D" parent="."]
