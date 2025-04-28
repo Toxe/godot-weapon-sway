@@ -2,4 +2,4 @@
 
 Simple Doom-style weapon sway test using curves.
 
-https://imgur.com/gallery/mQFpY5U
+https://imgur.com/a/godot-weapon-with-curves-mQFpY5U
